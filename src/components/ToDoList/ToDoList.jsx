@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './ToDoList.module.css';
+import App from '../App/App';
 
 export const ToDoList = ({ todos, deleteTodoClick }) => {
   return (
@@ -9,8 +10,8 @@ export const ToDoList = ({ todos, deleteTodoClick }) => {
           <li key={id} className={css.item}>
             <p className={css.text}>{text}</p>
             <button
-              onClick={() => {
-                deleteTodoClick(id);
+              onClick={id => {
+                console.log(id);
               }}
               className={css.button}
             >
