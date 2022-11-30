@@ -1,0 +1,36 @@
+.list {
+  display: block;
+  padding: 0;
+}
+
+.item {
+  background-color: rgb(194, 227, 228);
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.text {
+  margin: 0;
+  font-size: 15px;
+}
+
+.button {
+  display: block;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: rgb(231, 179, 236);
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.button:hover {
+  background-color: rgb(226, 152, 233);
+  transform: scale(1.1);
+}
